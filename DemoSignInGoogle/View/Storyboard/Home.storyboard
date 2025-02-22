@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="DemoSignInGoogle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWi-AX-26O">
+                                <rect key="frame" x="164" y="346" width="65" height="160.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID User" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEz-X8-YLA">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOd-XO-Odk">
+                                        <rect key="frame" x="0.0" y="34" width="65" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJs-sQ-Z3a">
+                                        <rect key="frame" x="0.0" y="68" width="65" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-wg-lth">
+                                        <rect key="frame" x="-8.6666666666666572" y="121.99999999999999" width="82.666666666666671" height="38.333333333333329"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Signout"/>
+                                        <connections>
+                                            <action selector="handleTappedBtnSignout:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="H2m-un-gK5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kEz-X8-YLA" secondAttribute="trailing" id="1N4-Ta-xo1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dmi-wg-lth" secondAttribute="bottom" id="5bu-8s-lgd"/>
+                                    <constraint firstItem="Dmi-wg-lth" firstAttribute="top" secondItem="tJs-sQ-Z3a" secondAttribute="bottom" constant="30" id="KlV-2O-MEM"/>
+                                    <constraint firstItem="tJs-sQ-Z3a" firstAttribute="leading" secondItem="UWi-AX-26O" secondAttribute="leading" id="OyB-DZ-MC5"/>
+                                    <constraint firstItem="kEz-X8-YLA" firstAttribute="top" secondItem="UWi-AX-26O" secondAttribute="top" id="RLK-MA-RIM"/>
+                                    <constraint firstItem="LOd-XO-Odk" firstAttribute="leading" secondItem="UWi-AX-26O" secondAttribute="leading" id="eg1-5m-Xn3"/>
+                                    <constraint firstItem="LOd-XO-Odk" firstAttribute="top" secondItem="kEz-X8-YLA" secondAttribute="bottom" constant="10" id="hEb-oL-Mp9"/>
+                                    <constraint firstAttribute="trailing" secondItem="LOd-XO-Odk" secondAttribute="trailing" id="hXn-pV-gj6"/>
+                                    <constraint firstItem="kEz-X8-YLA" firstAttribute="leading" secondItem="UWi-AX-26O" secondAttribute="leading" id="jo2-rj-d74"/>
+                                    <constraint firstAttribute="trailing" secondItem="tJs-sQ-Z3a" secondAttribute="trailing" id="kLa-o3-Hp1"/>
+                                    <constraint firstItem="tJs-sQ-Z3a" firstAttribute="top" secondItem="LOd-XO-Odk" secondAttribute="bottom" constant="10" id="n2z-uf-7bP"/>
+                                    <constraint firstItem="Dmi-wg-lth" firstAttribute="centerX" secondItem="UWi-AX-26O" secondAttribute="centerX" id="zXQ-zv-gcE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UWi-AX-26O" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bh5-Cc-DSK"/>
+                            <constraint firstItem="UWi-AX-26O" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jSX-6P-Mm8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="tJs-sQ-Z3a" id="0WP-fj-GNp"/>
+                        <outlet property="idUser" destination="kEz-X8-YLA" id="ZVK-jL-4wa"/>
+                        <outlet property="name" destination="LOd-XO-Odk" id="l0O-ZH-lca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

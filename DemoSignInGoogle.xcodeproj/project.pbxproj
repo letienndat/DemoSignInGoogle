@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C5B2E90BD457046C0206321C /* Pods_DemoSignInGoogle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3E4E82947A4C0BF95CA1D3 /* Pods_DemoSignInGoogle.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2CDFEFC744F5355120AD135D /* Pods-DemoSignInGoogle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSignInGoogle.release.xcconfig"; path = "Target Support Files/Pods-DemoSignInGoogle/Pods-DemoSignInGoogle.release.xcconfig"; sourceTree = "<group>"; };
 		4AFBDD392D69B86000D5C742 /* DemoSignInGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSignInGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D2F594167E5AADF82AC4C9 /* Pods-DemoSignInGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSignInGoogle.debug.xcconfig"; path = "Target Support Files/Pods-DemoSignInGoogle/Pods-DemoSignInGoogle.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3E4E82947A4C0BF95CA1D3 /* Pods_DemoSignInGoogle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSignInGoogle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,16 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B2E90BD457046C0206321C /* Pods_DemoSignInGoogle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F259D5934975265A04F183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E3E4E82947A4C0BF95CA1D3 /* Pods_DemoSignInGoogle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4AFBDD302D69B86000D5C742 = {
 			isa = PBXGroup;
 			children = (
 				4AFBDD3B2D69B86000D5C742 /* DemoSignInGoogle */,
+				12F259D5934975265A04F183 /* Frameworks */,
+				D0BA6578C4B48945A09967E4 /* Pods */,
 				4AFBDD3A2D69B86000D5C742 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +76,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D0BA6578C4B48945A09967E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92D2F594167E5AADF82AC4C9 /* Pods-DemoSignInGoogle.debug.xcconfig */,
+				2CDFEFC744F5355120AD135D /* Pods-DemoSignInGoogle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AFBDD4C2D69B86100D5C742 /* Build configuration list for PBXNativeTarget "DemoSignInGoogle" */;
 			buildPhases = (
+				CDD22769CCC5ABB75BC8009F /* [CP] Check Pods Manifest.lock */,
 				4AFBDD352D69B86000D5C742 /* Sources */,
 				4AFBDD362D69B86000D5C742 /* Frameworks */,
 				4AFBDD372D69B86000D5C742 /* Resources */,
+				0D41D25DCCDB90DEA494368F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				4AFBDD3B2D69B86000D5C742 /* DemoSignInGoogle */,
 			);
 			name = DemoSignInGoogle;
-			packageProductDependencies = (
-			);
 			productName = DemoSignInGoogle;
 			productReference = 4AFBDD392D69B86000D5C742 /* DemoSignInGoogle.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D41D25DCCDB90DEA494368F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSignInGoogle/Pods-DemoSignInGoogle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoSignInGoogle/Pods-DemoSignInGoogle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoSignInGoogle/Pods-DemoSignInGoogle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD22769CCC5ABB75BC8009F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoSignInGoogle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AFBDD352D69B86000D5C742 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +209,7 @@
 /* Begin XCBuildConfiguration section */
 		4AFBDD4D2D69B86100D5C742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D2F594167E5AADF82AC4C9 /* Pods-DemoSignInGoogle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -148,11 +218,13 @@
 				DEVELOPMENT_TEAM = 2C5DNYDK64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoSignInGoogle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Login Google Demo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,6 +232,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.letiendat.DemoSignInGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -168,6 +244,7 @@
 		};
 		4AFBDD4E2D69B86100D5C742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDFEFC744F5355120AD135D /* Pods-DemoSignInGoogle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -176,11 +253,13 @@
 				DEVELOPMENT_TEAM = 2C5DNYDK64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoSignInGoogle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Login Google Demo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +267,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.letiendat.DemoSignInGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -231,7 +314,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,7 +377,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
